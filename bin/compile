@@ -3,13 +3,13 @@
 
 set -e
 
-PHP_TARBALL=https://s3-eu-west-1.amazonaws.com/midgard-heroku/php-5.3.21.tar.gz
+PHP_VERSION=5.3.21
+PHP_TARBALL=https://s3-eu-west-1.amazonaws.com/midgard-heroku/php-$PHP_VERSION.tar.gz
 TARGET_DIR=$HOME
 BUILD_DIR=$1
 CACHE_DIR=$2
 
 cd $BUILD_DIR
 
-echo "-----> Installing php 5.4.8"
+echo "-----> Installing php $PHP_VERSION"
 curl --silent --max-time 60 --location "$PHP_TARBALL" | tar xz
-
