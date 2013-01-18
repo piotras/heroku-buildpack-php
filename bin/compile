@@ -3,7 +3,7 @@
 
 set -e
 
-PHP_TARBALL=https://s3-eu-west-1.amazonaws.com/midgard-heroku/php-5.4.8.tar.gz
+PHP_TARBALL=https://s3-eu-west-1.amazonaws.com/midgard-heroku/php-5.3.21.tar.gz
 TARGET_DIR=$HOME
 BUILD_DIR=$1
 CACHE_DIR=$2
